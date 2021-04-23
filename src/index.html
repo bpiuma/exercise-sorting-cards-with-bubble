@@ -17,7 +17,7 @@
     <nav class="navbar navbar-light bg-light">
       <form class="form-inline">
         <input
-          class="form-control mr-sm-2"
+          class="form-control input mr-sm-2"
           type="number"
           placeholder="Ingrese la cantidad"
           aria-label="Search"
@@ -28,40 +28,28 @@
         >
           Draw
         </button>
-        <button class="sort btn btn-outline-success my-2 my-sm-0" type="submit">
-          Sort
+        <button
+          class="bubblesort btn btn-outline-success my-2 my-sm-0 mr-2"
+          type="submit"
+        >
+          Bubble Sort
+        </button>
+        <button
+          class="selectsort btn btn-outline-success my-2 my-sm-0 mr-2"
+          type="submit"
+        >
+          Select Sort
         </button>
       </form>
     </nav>
 
     <div class="container-fluid">
-      <div class="row desordenado">
-        <!-- <div class="col-12 d-flex flex-wrap">
-                <div class="carta bg-white d-flex flex-column justify-content-between">
-                    <div class="figura">
-                        <h1>♠</h1>
-                    </div>
-                    <div class="numero d-flex justify-content-center">
-                        <h1>5</h1>
-                    </div>
-                    <div class="figura invertida float-right">
-                        <h1>♠</h1>
-                    </div>
-                </div>
-
-                <div class="row"></div>
-            </div> -->
-
-        <!-- <div class="container bg-white d-flex flex-column justify-content-between">
-      <div class="figura">
-        <h1>♠</h1>
-      </div>
-      <div class="numero d-flex justify-content-center">
-        <h1>2</h1>
-      </div>
-      <div class="figura invertida float-right">
-        <h1>♠</h1> -->
-      </div>
+      <h1 class="text-white">Desordenado</h1>
+      <div class="row desordenado"></div>
+      <h1 class="text-white">Ordenado Bubble</h1>
+      <div class="row ordenadoBubble"></div>
+      <h1 class="text-white">Ordenado Select</h1>
+      <div class="row ordenadoSelect mb-3"></div>
     </div>
   </body>
 </html>

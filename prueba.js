@@ -1,4 +1,4 @@
-function randomNF(cantidad) {
+function generarCartas(cantidad) {
 
     const figuras = ["♦", "♥", "♠", "♣"];
     const numeros = [
@@ -24,12 +24,16 @@ function randomNF(cantidad) {
         let randomNumero = numeros[(Math.floor(Math.random() * numeros.length))];
         nuevaCarta = {
             figura: randomFigura,
-            numero: randomNumero
+            numero: randomNumero,
+            color: ""
+        }
+        if ((randomFigura == "♦") ||  (randomFigura == "♥")){
+            nuevaCarta.color = "red";
         }
         arreglo.push(nuevaCarta);
     }
     return arreglo;
-    
+
 }
 
-console.log(randomNF(10));
+console.log(generarCartas(10));

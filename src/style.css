@@ -6,20 +6,20 @@ body {
 
 .carta {
   /* margin: auto; */
-  width: 300px;
-  height: 400px;
-  margin-top: 40px;
-  border-radius: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 150px;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .figura h1 {
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .numero h1 {
-  font-size: 130px;
+  font-size: 65px;
 }
 
 .invertida {
