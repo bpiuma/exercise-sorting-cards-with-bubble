@@ -33,45 +33,6 @@ btnDraw.addEventListener("click", function(e) {
   });
 });
 
-function generarCarta() {
-  var figuras = ["♦", "♥", "♠", "♣"];
-  var numeros = [
-    "A",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "J",
-    "Q",
-    "K"
-  ];
-
-  var indiceFigura = Math.floor(Math.random() * figuras.length);
-  var indiceNumero = Math.floor(Math.random() * numeros.length);
-
-  if (indiceFigura <= 1) {
-    figura.style.color = "red";
-    figuraInv.style.color = "red";
-    numero.style.color = "red";
-  }
-
-  let carta =
-    '<div class="carta bg-white d-flex flex-column justify-content-between"><div class="figura"><h1>' +
-    figuras[indiceFigura] +
-    '</h1></div><div class="numero d-flex justify-content-center"><h1>' +
-    numeros[indiceNumero] +
-    '</h1></div><div class="figura invertida float-right"><h1>' +
-    figuras[indiceFigura] +
-    "</h1></div></div>";
-
-  return carta;
-}
-
 function generarCartas(cantidad) {
   const figuras = ["♦", "♥", "♠", "♣"];
   const numeros = [
